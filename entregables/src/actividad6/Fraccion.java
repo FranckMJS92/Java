@@ -1,4 +1,4 @@
-package claseFraccion;
+package actividad6;
 
 /**
  * Clase Fraccion que representa una fracción matemática.
@@ -118,7 +118,8 @@ public class Fraccion {
     }
 
     /**
-     * Calculates the greatest common divisor (GCD) of two integers using the Euclidean algorithm.
+     * Calculates the greatest common divisor (GCD) of two integers using the
+     * Euclidean algorithm.
      *
      * @param a the first integer
      * @param b the second integer
@@ -139,27 +140,27 @@ public class Fraccion {
         denominador /= mcd;
     }
 
-    public Fraccion sumar(Fraccion otraFraccion){
-        int nuevoNumerador = this.numerador*otraFraccion.denominador + otraFraccion.numerador*this.denominador;
-        int nuevoDenominador = this.denominador*otraFraccion.denominador;
-        return (new Fraccion(nuevoNumerador,nuevoDenominador));
+    public Fraccion sumar(Fraccion otraFraccion) {
+        int nuevoNumerador = this.numerador * otraFraccion.denominador + otraFraccion.numerador * this.denominador;
+        int nuevoDenominador = this.denominador * otraFraccion.denominador;
+        return (new Fraccion(nuevoNumerador, nuevoDenominador));
     }
 
-    public Fraccion restar(Fraccion otraFraccion){
-        int nuevoNumerador = this.numerador*otraFraccion.denominador - otraFraccion.numerador*this.denominador;
-        int nuevoDenominador = this.denominador*otraFraccion.denominador;
-        return (new Fraccion(nuevoNumerador,nuevoDenominador));
+    public Fraccion restar(Fraccion otraFraccion) {
+        int nuevoNumerador = this.numerador * otraFraccion.denominador - otraFraccion.numerador * this.denominador;
+        int nuevoDenominador = this.denominador * otraFraccion.denominador;
+        return (new Fraccion(nuevoNumerador, nuevoDenominador));
     }
 
-    public Fraccion multiplicar(Fraccion otraFraccion){
-        int nuevoNumerador = this.numerador*otraFraccion.numerador;
-        int nuevoDenominador = this.denominador*otraFraccion.denominador;
-        return (new Fraccion(nuevoNumerador,nuevoDenominador));
+    public Fraccion multiplicar(Fraccion otraFraccion) {
+        int nuevoNumerador = this.numerador * otraFraccion.numerador;
+        int nuevoDenominador = this.denominador * otraFraccion.denominador;
+        return (new Fraccion(nuevoNumerador, nuevoDenominador));
     }
 
-    public Fraccion dividir(Fraccion otraFraccion){
-        int nuevoNumerador = this.numerador*otraFraccion.denominador;
-        int nuevoDenominador = this.denominador*otraFraccion.numerador;
-        return (new Fraccion(nuevoNumerador,nuevoDenominador));
+    public Fraccion dividir(Fraccion otraFraccion) {
+        int nuevoNumerador = this.numerador * otraFraccion.denominador;
+        int nuevoDenominador = this.denominador * otraFraccion.numerador;
+        return (new Fraccion(nuevoNumerador, nuevoDenominador));
     }
 }
