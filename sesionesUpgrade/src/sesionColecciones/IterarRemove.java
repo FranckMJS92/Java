@@ -1,5 +1,9 @@
 package sesionColecciones;
 
+/*
+ * Date: 25/03/2025
+ */
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
