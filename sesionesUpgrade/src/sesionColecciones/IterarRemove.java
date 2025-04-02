@@ -3,7 +3,7 @@ package sesionColecciones;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class EjemploColecciones {
+public class IterarRemove {
 
     public static void main(String[] args) {
         // Crear una lista
