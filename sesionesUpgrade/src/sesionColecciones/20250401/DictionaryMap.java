@@ -1,7 +1,7 @@
-package sesionColecciones;
+
 
 /*
- * Date: 02/04/2025
+ * Date: 01/04/2025
  */
 
 import java.util.HashMap;
@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class DiccionarioMapIteratorForeachLambda {
+public class DictionaryMap {
 
     public static void main(String[] args) {
         // Crear HashMap
@@ -39,15 +39,6 @@ public class DiccionarioMapIteratorForeachLambda {
             Map.Entry<String, Integer> mentry = iterator.next();
             System.out.println("Clave: " + mentry.getKey() + " - Valor: " + mentry.getValue());
         }
-
-        // Imprimir recorriendo con un bucle for-each:
-        for (Map.Entry<String, Integer> entrada : palabrasQuijote.entrySet()) {
-            System.out.println("Clave: " + entrada.getKey() + " - Valor " + entrada.getValue());
-        }
-
-        // Alternativa más moderna (Java 8+) con una expresión lambda:
-        palabrasQuijote.forEach((clave, valor) -> System.out.println("Clave: " + clave + " - Valor " + valor));
-
     }
 
 }

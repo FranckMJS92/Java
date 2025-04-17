@@ -1,4 +1,4 @@
-package sesionColecciones;
+//package sesionColecciones;
 
 /*
  * Date: 25/03/2025
