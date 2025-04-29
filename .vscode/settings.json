@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "sesionesUpgrade/src/sesionFicheros/20250409",
-        "entregables/src/actividad9"
+        "entregables/src/actividad9",
+        "sesionesUpgrade/src/20250422"
     ]
 }
