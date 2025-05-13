@@ -2,8 +2,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class ConexionBasica {
-    public static void main(String[] args) {
+public class App {
+    public static void main(String[] args) throws Exception {
+        System.out.println("Hello, World!");
+
         try {
             // Indicar el tipo y el lugar de la base de datos
             String urlbdd = "jdbc:sqlite:C:\\Users\\HP\\AppData\\Roaming\\DBeaverData\\workspace6\\.metadata\\sample-database-sqlite-1\\Chinook.db";
