@@ -35,7 +35,7 @@ public class DescuentoSobrePrecio {
     }
 
     public double precioFinalConDescuento(double precioOriginal, double descuento) {
-        double precioFinal = precioOriginal - (precioOriginal * descuento)/100;
+        double precioFinal = precioOriginal - (precioOriginal * descuento/100);
         return precioFinal;
     }
 

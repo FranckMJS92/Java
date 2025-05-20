@@ -10,7 +10,7 @@ public class Simulacro {
         System.out.println("----- AGREGANDO NOMBRES -----");
         while (true) {
             System.out.print("Ingrese nombres de personas: ");
-            String name = sc.nextLine().toUpperCase();
+            String name = sc.nextLine().trim().toUpperCase();
 
             if (name.equalsIgnoreCase("fin")) {
                 break;
