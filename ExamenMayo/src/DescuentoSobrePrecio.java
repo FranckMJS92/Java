@@ -1,8 +1,8 @@
 public class DescuentoSobrePrecio {
 
     private String nombreProducto;
-    private double precioOriginal;
-    private double descuento;
+    private double precioOriginal, descuento;
+    //private double descuento;
 
     public DescuentoSobrePrecio(String nombreProducto, double precioOriginal, double descuento) {
         this.nombreProducto = nombreProducto;
@@ -34,15 +34,15 @@ public class DescuentoSobrePrecio {
         this.descuento = descuento;
     }
 
-    public double precioFinalConDescuento(double precioOriginal, double descuento) {
-        double precioFinal = precioOriginal - (precioOriginal * descuento/100);
+    public double precioFinalConDescuento() {
+        double precioFinal = precioOriginal - (precioOriginal * descuento / 100);
         return precioFinal;
     }
 
     public void mostrarDetalles() {
         System.out.println("- Nombre Producto = " + nombreProducto + "\n - Precio Original = " + precioOriginal + "€"
                 + "\n - Descuento = " + descuento + "%" + "\n - Precio Final = "
-                + precioFinalConDescuento(precioOriginal, descuento) + "€");
+                + precioFinalConDescuento() + "€");
     }
 
 }
